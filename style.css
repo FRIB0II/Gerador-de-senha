@@ -109,3 +109,37 @@ body{
     bottom: 50px;
     opacity: 1;
 }
+
+.container-input div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-input div button{
+    margin: 12px;
+    margin-bottom: 0px;
+}
+
+#button-special-char-yes {
+    height: 20px;
+    background-color: #24a724;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+    font-size: 9px;
+}
+
+#button-special-char-no {
+    height: 20px;
+    background-color: #b81414;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+    font-size: 9px;
+}

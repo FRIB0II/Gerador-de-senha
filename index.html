@@ -16,8 +16,15 @@
         <span>Tamanho <span id="valor"></span> caracteres</span>
 
         <input type="range" id="slider" class="slider" min="5" max="25" value="15">
+        
+        <span>Permite caracteres especiais?</span>
+        
+        <div>
+            <button id="button-special-char-yes" onclick="generateSpecialPassword()">Sim</button>
+            <button id="button-special-char-no" onclick="generatePassword()">Não</button>            
+        </div>
 
-        <button id="button" class="button-cta" onclick="generatePassword()">Gerar senha</button>
+        <button id="button-generate" class="button-cta" onclick="showPassword()">Gerar senha</button>
     </main>
 
     <div id="container-password" onclick="copyPassword()" class="container-password hide">
