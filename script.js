@@ -11,6 +11,8 @@ let containerPassword = document.querySelector("#container-password");
 let normalCharset = "abcdefghijklmnopqrstuwxyzABCDEFGHIJKLMNOPQRSTUWXYZ0123456789";
 let specialCharset = "abcdefghijklmnopqrstuwxyzABCDEFGHIJKLMNOPQRSTUWXYZ0123456789!@$&";
 let novaSenha = "";
+let generatePasswordAgain = "False";
+let generateSpecialPasswordAgain = "False";
 
 sizePassword.innerHTML = sliderElement.value;
 
@@ -29,9 +31,11 @@ function generatePassword(){
 
     password.innerHTML = pass;
     novaSenha = pass;
+    generatePasswordAgain = "True";
 }
 
 function generateSpecialPassword(){
+    
     let pass = "";
     for(let i = 0, n = specialCharset.length; i < sliderElement.value; ++i){
         pass += specialCharset.charAt(Math.floor(Math.random() * n))
@@ -41,9 +45,17 @@ function generateSpecialPassword(){
 
     password.innerHTML = pass;
     novaSenha = pass;
+    generateSpecialPasswordAgain = "True";
 }
 
 function showPassword(){
+
+    if(generatePasswordAgain == "True"){
+        generatePassword();
+    }
+    else if(generateSpecialPasswordAgain == "True"){
+        generateSpecialPassword();
+    }
     containerPassword.classList.remove("hide");
 }
 
