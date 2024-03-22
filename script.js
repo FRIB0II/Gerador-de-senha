@@ -9,7 +9,7 @@ let password = document.querySelector("#password");
 let containerPassword = document.querySelector("#container-password");
 
 let normalCharset = "abcdefghijklmnopqrstuwxyzABCDEFGHIJKLMNOPQRSTUWXYZ0123456789";
-let specialCharset = "abcdefghijklmnopqrstuwxyzABCDEFGHIJKLMNOPQRSTUWXYZ0123456789!@$&";
+let specialCharset = "!@#$&abcdefghijklmnopqrstuwxyz!@#$&ABCDEFGHIJKLMNOPQRSTUWXYZ0123456789!@#$&";
 let novaSenha = "";
 let generatePasswordAgain = "False";
 let generateSpecialPasswordAgain = "False";
